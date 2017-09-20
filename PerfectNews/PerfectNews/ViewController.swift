@@ -9,15 +9,17 @@
 import UIKit
 import FBSDKLoginKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+    
+    let loginButton = FBSDKLoginButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginButton = FBSDKLoginButton()
-        loginButton.center = view.center
-        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-        view.addSubview(loginButton as? UIView ?? UIView())
+        self.loginButton.center = view.center
+        self.loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        self.loginButton.delegate = self
+        view.addSubview(self.loginButton)
 
     }
 
@@ -26,6 +28,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        print("Loged in")
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("Logout")
+    }
 }
 
