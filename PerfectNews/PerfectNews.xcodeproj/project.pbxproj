@@ -14,6 +14,7 @@
 		22443C211F71DECB00F2F526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22443C201F71DECB00F2F526 /* Assets.xcassets */; };
 		22443C241F71DECB00F2F526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22443C221F71DECB00F2F526 /* LaunchScreen.storyboard */; };
 		22443C2C1F71E06700F2F526 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22443C2B1F71E06700F2F526 /* GoogleService-Info.plist */; };
+		22DC5B0A1F72031B00069645 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DC5B091F72031B00069645 /* FBSDKCoreKit.framework */; };
 		EB855776A5AF54D2B4967B2C /* Pods_PerfectNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF413D00D5C82A85B3AA6903 /* Pods_PerfectNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		22443C231F71DECB00F2F526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22443C251F71DECB00F2F526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22443C2B1F71E06700F2F526 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22DC5B091F72031B00069645 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		27342D52F761F0E0786A4A67 /* Pods-PerfectNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerfectNews/Pods-PerfectNews.release.xcconfig"; sourceTree = "<group>"; };
 		5C38F5776B004251574987E4 /* Pods-PerfectNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PerfectNews/Pods-PerfectNews.debug.xcconfig"; sourceTree = "<group>"; };
 		BF413D00D5C82A85B3AA6903 /* Pods_PerfectNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfectNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB855776A5AF54D2B4967B2C /* Pods_PerfectNews.framework in Frameworks */,
+				22DC5B0A1F72031B00069645 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +50,7 @@
 		110C4D3B661D7EF219F68E4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22DC5B091F72031B00069645 /* FBSDKCoreKit.framework */,
 				BF413D00D5C82A85B3AA6903 /* Pods_PerfectNews.framework */,
 			);
 			name = Frameworks;
@@ -354,6 +358,17 @@
 			baseConfigurationReference = 5C38F5776B004251574987E4 /* Pods-PerfectNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = PerfectNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.isil.PerfectNews;
@@ -367,6 +382,17 @@
 			baseConfigurationReference = 27342D52F761F0E0786A4A67 /* Pods-PerfectNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = PerfectNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.isil.PerfectNews;
@@ -394,6 +420,7 @@
 				22443C2A1F71DECB00F2F526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
