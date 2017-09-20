@@ -7,4 +7,6 @@ target 'PerfectNews' do
 
   # Pods for PerfectNews
     pod 'Firebase'
+    pod 'Firebase/Auth'
+
 end
