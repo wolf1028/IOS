@@ -14,6 +14,7 @@
 		22443C211F71DECB00F2F526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22443C201F71DECB00F2F526 /* Assets.xcassets */; };
 		22443C241F71DECB00F2F526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22443C221F71DECB00F2F526 /* LaunchScreen.storyboard */; };
 		22443C2C1F71E06700F2F526 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22443C2B1F71E06700F2F526 /* GoogleService-Info.plist */; };
+		22D17EFD1F742F880075AA00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D17EFC1F742F880075AA00 /* HomeViewController.swift */; };
 		22DC5B0A1F72031B00069645 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DC5B091F72031B00069645 /* FBSDKCoreKit.framework */; };
 		22DC5B0C1F7209F300069645 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DC5B0B1F7209F300069645 /* FBSDKLoginKit.framework */; };
 		EB855776A5AF54D2B4967B2C /* Pods_PerfectNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF413D00D5C82A85B3AA6903 /* Pods_PerfectNews.framework */; };
@@ -29,6 +30,7 @@
 		22443C231F71DECB00F2F526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22443C251F71DECB00F2F526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22443C2B1F71E06700F2F526 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22D17EFC1F742F880075AA00 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		22DC5B091F72031B00069645 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		22DC5B0B1F7209F300069645 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		27342D52F761F0E0786A4A67 /* Pods-PerfectNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerfectNews/Pods-PerfectNews.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				22443C251F71DECB00F2F526 /* Info.plist */,
 				22443C2B1F71E06700F2F526 /* GoogleService-Info.plist */,
 				22443C1D1F71DECB00F2F526 /* PerfectNews.xcdatamodeld */,
+				22D17EFC1F742F880075AA00 /* HomeViewController.swift */,
 			);
 			path = PerfectNews;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				22443C1F1F71DECB00F2F526 /* PerfectNews.xcdatamodeld in Sources */,
 				22443C191F71DECB00F2F526 /* ViewController.swift in Sources */,
 				22443C171F71DECB00F2F526 /* AppDelegate.swift in Sources */,
+				22D17EFD1F742F880075AA00 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
