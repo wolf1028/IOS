@@ -15,7 +15,12 @@ class ArticuloTableViewCell: UITableViewCell {
     @IBOutlet weak var lblDescArt: UILabel!
     @IBOutlet weak var lblAutorArt: UILabel!
     
+    var objArt : ArticuloBE!
     
+    func actualizarData(){
+        self.lblTituArt.text = "\(self.objArt.tituArt)"
+        
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

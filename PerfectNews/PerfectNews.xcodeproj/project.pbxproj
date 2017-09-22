@@ -15,6 +15,7 @@
 		22443C241F71DECB00F2F526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22443C221F71DECB00F2F526 /* LaunchScreen.storyboard */; };
 		22443C2C1F71E06700F2F526 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22443C2B1F71E06700F2F526 /* GoogleService-Info.plist */; };
 		22A0DD0B1F7587260040B698 /* ArticuloTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0DD0A1F7587260040B698 /* ArticuloTableViewCell.swift */; };
+		22A0DD0D1F75917D0040B698 /* ArticuloBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0DD0C1F75917D0040B698 /* ArticuloBE.swift */; };
 		22D17EFD1F742F880075AA00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D17EFC1F742F880075AA00 /* HomeViewController.swift */; };
 		22DC5B0A1F72031B00069645 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DC5B091F72031B00069645 /* FBSDKCoreKit.framework */; };
 		22DC5B0C1F7209F300069645 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DC5B0B1F7209F300069645 /* FBSDKLoginKit.framework */; };
@@ -32,6 +33,7 @@
 		22443C251F71DECB00F2F526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22443C2B1F71E06700F2F526 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22A0DD0A1F7587260040B698 /* ArticuloTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticuloTableViewCell.swift; sourceTree = "<group>"; };
+		22A0DD0C1F75917D0040B698 /* ArticuloBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticuloBE.swift; sourceTree = "<group>"; };
 		22D17EFC1F742F880075AA00 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		22DC5B091F72031B00069645 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		22DC5B0B1F7209F300069645 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				22443C1D1F71DECB00F2F526 /* PerfectNews.xcdatamodeld */,
 				22D17EFC1F742F880075AA00 /* HomeViewController.swift */,
 				22A0DD0A1F7587260040B698 /* ArticuloTableViewCell.swift */,
+				22A0DD0C1F75917D0040B698 /* ArticuloBE.swift */,
 			);
 			path = PerfectNews;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				22443C1F1F71DECB00F2F526 /* PerfectNews.xcdatamodeld in Sources */,
 				22A0DD0B1F7587260040B698 /* ArticuloTableViewCell.swift in Sources */,
 				22443C191F71DECB00F2F526 /* ViewController.swift in Sources */,
+				22A0DD0D1F75917D0040B698 /* ArticuloBE.swift in Sources */,
 				22443C171F71DECB00F2F526 /* AppDelegate.swift in Sources */,
 				22D17EFD1F742F880075AA00 /* HomeViewController.swift in Sources */,
 			);

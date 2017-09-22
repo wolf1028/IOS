@@ -15,6 +15,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var lblNomUser: UILabel!
     @IBOutlet weak var articuloTableView: UITableView!
     
+    var articles: [ArticuloBE] = []
+    
     @IBAction func btnLogout(_ sender: Any) {
     
         let firebaseAuth = Auth.auth()
@@ -47,6 +49,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             let firstWord:String = nom!.components(separatedBy: " ").first!
             self.lblNomUser.text = "Hi, \(firstWord)"
+            
+            self.articuloTableView.estimatedRowHeight = 200
+            self.articuloTableView.rowHeight = UITableViewAutomaticDimension
+            
+            fetchArticles()
         }
     }
     
@@ -55,9 +62,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cellIdentifier = "articuloTableViewCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ArticuloTableViewCell
         
-        //cell.objAutos = arrayAuto[indexPath.row]
-        //cell.actualizarData()
-        cell.lblTituArt.text = "Hola"
+            cell.objArt = articles[indexPath.row]
+            cell.actualizarData()
+
         
         return cell
     }
@@ -67,7 +74,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return articles.count
     }
     
 
@@ -76,6 +83,44 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     }
     
+    func fetchArticles(){
+        let urlRequest = URLRequest(url: URL(string: "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=493594c4b4ac4280bcea75382090410c")!)
+        
+        let task = URLSession.shared.dataTask(with: urlRequest) { (data,response,error) in
+            
+            if error != nil {
+                print(error)
+                return
+            }
+            
+            self.articles = [ArticuloBE]()
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String : AnyObject]
+                
+                if let articlesFromJson = json["articles"] as? [[String : AnyObject]] {
+                    for articleFromJson in articlesFromJson {
+                        let article = ArticuloBE()
+                        if let title = articleFromJson["title"] as? String, let author = articleFromJson["author"] as? String, let desc = articleFromJson["description"] as? String, let url = articleFromJson["url"] as? String, let urlToImage = articleFromJson["urlToImage"] as? String {
+                            
+                            article.tituArt = title
 
+                        }
+                        self.articles.append(article)
+                    }
+                }
+                DispatchQueue.main.async {
+                    self.articuloTableView.reloadData()
+                }
+                
+            } catch let error {
+                print(error)
+            }
+            
+            
+        }
+        
+        task.resume()
+        
+    }
 
 }
