@@ -9,9 +9,21 @@
 import UIKit
 
 class ArticuloBE: NSObject {
-    var tituArt: String!
-    var descArt: String!
-    var autArt: String!
-    var urlArt: String!
-    var imgUrlArt: String!
+    
+    var articulo_tituArt    = ""
+    var articulo_descArt    = ""
+    var articulo_autArt     = ""
+    var articulo_urlArt     = ""
+    var articulo_imgUrlArt  = ""
+    
+    
+    class func parse(_ objDic : [String : Any]) -> ArticuloBE{
+        
+        let objBE = ArticuloBE()
+        
+        objBE.articulo_tituArt = CDMWebResponse.getString(objDic["title"])
+        
+        return objBE
+    }
+    
 }

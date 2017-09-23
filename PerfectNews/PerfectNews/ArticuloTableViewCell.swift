@@ -18,7 +18,7 @@ class ArticuloTableViewCell: UITableViewCell {
     var objArt : ArticuloBE!
     
     func actualizarData(){
-        self.lblTituArt.text = "\(self.objArt.tituArt)"
+        self.lblTituArt.text = "\(self.objArt.articulo_tituArt)"
         
     }
     

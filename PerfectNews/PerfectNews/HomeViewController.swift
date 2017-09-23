@@ -54,6 +54,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.articuloTableView.rowHeight = UITableViewAutomaticDimension
             
             fetchArticles()
+            
         }
     }
     
@@ -83,7 +84,18 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     }
     
+    
+    
+    
+  
+    
+    
+    
+    
+    
     func fetchArticles(){
+        
+    
         let urlRequest = URLRequest(url: URL(string: "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=493594c4b4ac4280bcea75382090410c")!)
         
         let task = URLSession.shared.dataTask(with: urlRequest) { (data,response,error) in
@@ -102,7 +114,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                         let article = ArticuloBE()
                         if let title = articleFromJson["title"] as? String, let author = articleFromJson["author"] as? String, let desc = articleFromJson["description"] as? String, let url = articleFromJson["url"] as? String, let urlToImage = articleFromJson["urlToImage"] as? String {
                             
-                            article.tituArt = title
+                        
 
                         }
                         self.articles.append(article)
