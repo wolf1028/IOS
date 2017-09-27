@@ -18,9 +18,9 @@ class ArticuloTableViewCell: UITableViewCell {
     var objArt : ArticuloBE!
     
     func actualizarData(){
-        self.lblTituArt.text = "\(self.objArt.articulo_tituArt)"
-        self.lblDescArt1.text = "\(self.objArt.articulo_descArt)"
-        self.lblAutorArt1.text = "\(self.objArt.articulo_autArt)"
+        self.lblTituArt.text    =   "\(self.objArt.articulo_tituArt)"
+        self.lblDescArt1.text   =   "\(self.objArt.articulo_descArt)"
+        self.lblAutorArt1.text  =   "\(self.objArt.articulo_autArt)"
         
         CDMImageDownloaded.descargarImagen(enURL: self.objArt.articulo_imgUrlArt, paraImageView: self.imgArtView, conPlaceHolder: nil) { (esCorrecto, urlImagen, imagen) in
             if self.objArt.articulo_imgUrlArt == urlImagen{
