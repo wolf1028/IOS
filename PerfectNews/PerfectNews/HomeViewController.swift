@@ -54,8 +54,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.articuloTableView.rowHeight = UITableViewAutomaticDimension
             
 
-            //articles = ArticuloBC.fetchArticulos()
-            self.articuloTableView.reloadData()
+            ArticuloBC.fetchArticulos(completionHandler: { (article) in
+                self.articles = article
+                self.articuloTableView.reloadData()
+            })
+            
+            
 
         }
     }
