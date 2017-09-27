@@ -18,7 +18,7 @@ class ArticuloWS: NSObject {
         CDMWebSender.doGETToURL(baseUrl, withPath: path, withParameter: nil) { (objRespuesta) in
             
             let diccionarioRespuesta = CDMWebResponse.getDictionary(objRespuesta.JSON)
-            let arrayArticulos = CDMWebResponse.getArrayDictionary(diccionarioRespuesta["article"])
+            let arrayArticulos = CDMWebResponse.getArrayDictionary(diccionarioRespuesta["articles"])
             
             var arrayArticulosFinal = [ArticuloBE]()
             
