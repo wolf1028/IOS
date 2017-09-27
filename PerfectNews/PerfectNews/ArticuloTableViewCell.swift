@@ -12,15 +12,15 @@ class ArticuloTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imgArtView: UIImageView!
     @IBOutlet weak var lblTituArt: UILabel!
-    @IBOutlet weak var lblDescArt: UILabel!
-    @IBOutlet weak var lblAutorArt: UILabel!
+    @IBOutlet weak var lblDescArt1: UILabel!
+    @IBOutlet weak var lblAutorArt1: UILabel!
     
     var objArt : ArticuloBE!
     
     func actualizarData(){
         self.lblTituArt.text = "\(self.objArt.articulo_tituArt)"
-        //self.lblDescArt.text = "\(self.objArt.articulo_descArt)"
-        //self.lblAutorArt.text = "\(self.objArt.articulo_autArt)"
+        self.lblDescArt1.text = "\(self.objArt.articulo_descArt)"
+        self.lblAutorArt1.text = "\(self.objArt.articulo_autArt)"
         
         CDMImageDownloaded.descargarImagen(enURL: self.objArt.articulo_imgUrlArt, paraImageView: self.imgArtView, conPlaceHolder: nil) { (esCorrecto, urlImagen, imagen) in
             if self.objArt.articulo_imgUrlArt == urlImagen{
