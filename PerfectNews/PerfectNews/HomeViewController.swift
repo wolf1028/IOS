@@ -53,8 +53,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.articuloTableView.estimatedRowHeight = 200
             self.articuloTableView.rowHeight = UITableViewAutomaticDimension
             
-            fetchArticles()
-            
+
+            //articles = ArticuloBC.fetchArticulos()
+            self.articuloTableView.reloadData()
+
         }
     }
     
@@ -65,7 +67,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
             cell.objArt = articles[indexPath.row]
             cell.actualizarData()
-
         
         return cell
     }
@@ -75,7 +76,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return articles.count
+        return self.articles.count
     }
     
 
@@ -84,55 +85,5 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     }
     
-    
-    
-    
-  
-    
-    
-    
-    
-    
-    func fetchArticles(){
-        
-    
-        let urlRequest = URLRequest(url: URL(string: "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=493594c4b4ac4280bcea75382090410c")!)
-        
-        let task = URLSession.shared.dataTask(with: urlRequest) { (data,response,error) in
-            
-            if error != nil {
-                print(error)
-                return
-            }
-            
-            self.articles = [ArticuloBE]()
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String : AnyObject]
-                
-                if let articlesFromJson = json["articles"] as? [[String : AnyObject]] {
-                    for articleFromJson in articlesFromJson {
-                        let article = ArticuloBE()
-                        if let title = articleFromJson["title"] as? String, let author = articleFromJson["author"] as? String, let desc = articleFromJson["description"] as? String, let url = articleFromJson["url"] as? String, let urlToImage = articleFromJson["urlToImage"] as? String {
-                            
-                        
-
-                        }
-                        self.articles.append(article)
-                    }
-                }
-                DispatchQueue.main.async {
-                    self.articuloTableView.reloadData()
-                }
-                
-            } catch let error {
-                print(error)
-            }
-            
-            
-        }
-        
-        task.resume()
-        
-    }
 
 }
