@@ -1,0 +1,6 @@
+framework module CoredataMedia {
+  umbrella header "CoredataMedia-umbrella.h"
+
+  export *
+  module * { export * }
+}

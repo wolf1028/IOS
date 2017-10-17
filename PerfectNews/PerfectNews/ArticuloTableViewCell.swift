@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoredataMedia
+import WOLFArticulos
 
 class ArticuloTableViewCell: UITableViewCell {
 

@@ -1,0 +1,27 @@
+{
+  "name": "WOLFArticulos",
+  "version": "0.1.0",
+  "summary": "A short description of WOLFArticulos.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/walter/WOLFArticulos",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "walter": "xxw4lt3rxx@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/walter/WOLFArticulos.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WOLFArticulos/Classes/**/*",
+  "dependencies": {
+    "CoredataMedia": [
+      "~> 0.1.0"
+    ]
+  }
+}

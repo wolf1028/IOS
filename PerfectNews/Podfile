@@ -8,5 +8,6 @@ target 'PerfectNews' do
   # Pods for PerfectNews
     pod 'Firebase'
     pod 'Firebase/Auth'
-
+    pod 'CoredataMedia', :path => ‘../Pods/CoredataMedia'
+    pod 'WOLFArticulos', :path => ‘../Pods/WOLFArticulos'
 end

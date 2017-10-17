@@ -19,18 +19,6 @@
 		22DC5B0A1F72031B00069645 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DC5B091F72031B00069645 /* FBSDKCoreKit.framework */; };
 		22DC5B0C1F7209F300069645 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DC5B0B1F7209F300069645 /* FBSDKLoginKit.framework */; };
 		EB855776A5AF54D2B4967B2C /* Pods_PerfectNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF413D00D5C82A85B3AA6903 /* Pods_PerfectNews.framework */; };
-		FB88CB621F7BE33C00337CCB /* ArticuloBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB611F7BE33C00337CCB /* ArticuloBC.swift */; };
-		FB88CB651F7BE34200337CCB /* ArticuloBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB641F7BE34200337CCB /* ArticuloBE.swift */; };
-		FB88CB681F7BE34800337CCB /* ArticuloWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB671F7BE34800337CCB /* ArticuloWS.swift */; };
-		FB88CB731F7BE35300337CCB /* CDMColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB6A1F7BE35300337CCB /* CDMColorManager.swift */; };
-		FB88CB741F7BE35300337CCB /* CDMDateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB6B1F7BE35300337CCB /* CDMDateManager.swift */; };
-		FB88CB751F7BE35300337CCB /* CDMImageDownloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB6C1F7BE35300337CCB /* CDMImageDownloaded.swift */; };
-		FB88CB761F7BE35300337CCB /* CDMKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB6D1F7BE35300337CCB /* CDMKeyChain.swift */; };
-		FB88CB771F7BE35300337CCB /* CDMLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB6E1F7BE35300337CCB /* CDMLoadingView.swift */; };
-		FB88CB781F7BE35300337CCB /* CDMLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB6F1F7BE35300337CCB /* CDMLocationManager.swift */; };
-		FB88CB791F7BE35300337CCB /* CDMUserAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB701F7BE35300337CCB /* CDMUserAlerts.swift */; };
-		FB88CB7A1F7BE35300337CCB /* CDMWebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB711F7BE35300337CCB /* CDMWebResponse.swift */; };
-		FB88CB7B1F7BE35300337CCB /* CDMWebSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88CB721F7BE35300337CCB /* CDMWebSender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,18 +38,6 @@
 		27342D52F761F0E0786A4A67 /* Pods-PerfectNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerfectNews/Pods-PerfectNews.release.xcconfig"; sourceTree = "<group>"; };
 		5C38F5776B004251574987E4 /* Pods-PerfectNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PerfectNews/Pods-PerfectNews.debug.xcconfig"; sourceTree = "<group>"; };
 		BF413D00D5C82A85B3AA6903 /* Pods_PerfectNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfectNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB88CB611F7BE33C00337CCB /* ArticuloBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticuloBC.swift; sourceTree = "<group>"; };
-		FB88CB641F7BE34200337CCB /* ArticuloBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticuloBE.swift; sourceTree = "<group>"; };
-		FB88CB671F7BE34800337CCB /* ArticuloWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticuloWS.swift; sourceTree = "<group>"; };
-		FB88CB6A1F7BE35300337CCB /* CDMColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMColorManager.swift; sourceTree = "<group>"; };
-		FB88CB6B1F7BE35300337CCB /* CDMDateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMDateManager.swift; sourceTree = "<group>"; };
-		FB88CB6C1F7BE35300337CCB /* CDMImageDownloaded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMImageDownloaded.swift; sourceTree = "<group>"; };
-		FB88CB6D1F7BE35300337CCB /* CDMKeyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMKeyChain.swift; sourceTree = "<group>"; };
-		FB88CB6E1F7BE35300337CCB /* CDMLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMLoadingView.swift; sourceTree = "<group>"; };
-		FB88CB6F1F7BE35300337CCB /* CDMLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMLocationManager.swift; sourceTree = "<group>"; };
-		FB88CB701F7BE35300337CCB /* CDMUserAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMUserAlerts.swift; sourceTree = "<group>"; };
-		FB88CB711F7BE35300337CCB /* CDMWebResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebResponse.swift; sourceTree = "<group>"; };
-		FB88CB721F7BE35300337CCB /* CDMWebSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebSender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +85,6 @@
 		22443C151F71DECB00F2F526 /* PerfectNews */ = {
 			isa = PBXGroup;
 			children = (
-				FB88CB691F7BE35300337CCB /* CoredataMedia */,
-				FB88CB661F7BE34800337CCB /* WS */,
-				FB88CB631F7BE34200337CCB /* BE */,
-				FB88CB601F7BE33C00337CCB /* BC */,
 				22443C161F71DECB00F2F526 /* AppDelegate.swift */,
 				22443C181F71DECB00F2F526 /* ViewController.swift */,
 				22443C1A1F71DECB00F2F526 /* Main.storyboard */,
@@ -134,46 +106,6 @@
 				27342D52F761F0E0786A4A67 /* Pods-PerfectNews.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		FB88CB601F7BE33C00337CCB /* BC */ = {
-			isa = PBXGroup;
-			children = (
-				FB88CB611F7BE33C00337CCB /* ArticuloBC.swift */,
-			);
-			path = BC;
-			sourceTree = "<group>";
-		};
-		FB88CB631F7BE34200337CCB /* BE */ = {
-			isa = PBXGroup;
-			children = (
-				FB88CB641F7BE34200337CCB /* ArticuloBE.swift */,
-			);
-			path = BE;
-			sourceTree = "<group>";
-		};
-		FB88CB661F7BE34800337CCB /* WS */ = {
-			isa = PBXGroup;
-			children = (
-				FB88CB671F7BE34800337CCB /* ArticuloWS.swift */,
-			);
-			path = WS;
-			sourceTree = "<group>";
-		};
-		FB88CB691F7BE35300337CCB /* CoredataMedia */ = {
-			isa = PBXGroup;
-			children = (
-				FB88CB6A1F7BE35300337CCB /* CDMColorManager.swift */,
-				FB88CB6B1F7BE35300337CCB /* CDMDateManager.swift */,
-				FB88CB6C1F7BE35300337CCB /* CDMImageDownloaded.swift */,
-				FB88CB6D1F7BE35300337CCB /* CDMKeyChain.swift */,
-				FB88CB6E1F7BE35300337CCB /* CDMLoadingView.swift */,
-				FB88CB6F1F7BE35300337CCB /* CDMLocationManager.swift */,
-				FB88CB701F7BE35300337CCB /* CDMUserAlerts.swift */,
-				FB88CB711F7BE35300337CCB /* CDMWebResponse.swift */,
-				FB88CB721F7BE35300337CCB /* CDMWebSender.swift */,
-			);
-			path = CoredataMedia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,14 +220,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PerfectNews/Pods-PerfectNews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CoredataMedia/CoredataMedia.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/WOLFArticulos/WOLFArticulos.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoredataMedia.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WOLFArticulos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,22 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB88CB7A1F7BE35300337CCB /* CDMWebResponse.swift in Sources */,
-				FB88CB791F7BE35300337CCB /* CDMUserAlerts.swift in Sources */,
-				FB88CB681F7BE34800337CCB /* ArticuloWS.swift in Sources */,
-				FB88CB731F7BE35300337CCB /* CDMColorManager.swift in Sources */,
 				22443C1F1F71DECB00F2F526 /* PerfectNews.xcdatamodeld in Sources */,
-				FB88CB781F7BE35300337CCB /* CDMLocationManager.swift in Sources */,
 				22A0DD0B1F7587260040B698 /* ArticuloTableViewCell.swift in Sources */,
-				FB88CB741F7BE35300337CCB /* CDMDateManager.swift in Sources */,
 				22443C191F71DECB00F2F526 /* ViewController.swift in Sources */,
-				FB88CB621F7BE33C00337CCB /* ArticuloBC.swift in Sources */,
-				FB88CB651F7BE34200337CCB /* ArticuloBE.swift in Sources */,
-				FB88CB771F7BE35300337CCB /* CDMLoadingView.swift in Sources */,
-				FB88CB761F7BE35300337CCB /* CDMKeyChain.swift in Sources */,
-				FB88CB751F7BE35300337CCB /* CDMImageDownloaded.swift in Sources */,
 				22443C171F71DECB00F2F526 /* AppDelegate.swift in Sources */,
-				FB88CB7B1F7BE35300337CCB /* CDMWebSender.swift in Sources */,
 				22D17EFD1F742F880075AA00 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

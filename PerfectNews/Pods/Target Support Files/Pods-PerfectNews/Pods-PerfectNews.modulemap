@@ -1,0 +1,6 @@
+framework module Pods_PerfectNews {
+  umbrella header "Pods-PerfectNews-umbrella.h"
+
+  export *
+  module * { export * }
+}
